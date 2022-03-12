@@ -1,0 +1,88 @@
+@import 'reset.scss';
+
+*{
+ box-sizing: border-box; 
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  display: grid;
+  grid-template-columns: 1fr; 
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "header"
+    "main";
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  header{
+    grid-area: header;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    padding: 5rem;
+    
+    button{
+      display: flex;
+      flex: 1 1 100%;
+      justify-content: center;
+      
+      &:hover{
+        font-weight: 700;
+      }
+  
+      #tab1{
+       
+      }
+      
+      #tab2{
+        
+      }
+  
+      #tab3{
+        
+      }
+  
+      
+    }
+  }
+  
+  section{
+    display: grid;
+
+    img{
+
+    }
+
+    // &:focus-visible{
+
+    // }
+
+
+  }
+
+}
+
+
