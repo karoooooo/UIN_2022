@@ -1,0 +1,45 @@
+{
+  "folders": [
+	{
+		"name": "UIN_2022",
+		"path": ".."
+	},
+	{
+		"name": "base_custom_template",
+		"path": "..\\..\\base_custom_template"
+	},
+	{
+		"name": "pokemon_live_K",
+		"path": "..\\pokemon_live_K"
+	},
+	{
+		"name": "react_player_K",
+		"path": "..\\react_player_K"
+	},
+	{
+		"name": "sanity_u10_K",
+		"path": "..\\sanity_u10_K"
+	},
+	{
+		"name": "todo_K",
+		"path": "..\\todo_K"
+	},
+	{
+		"name": "u8_1_K",
+		"path": "..\\u8_1_K"
+	},
+	{
+		"name": "u8_2_K",
+		"path": "..\\u8_2_K"
+	},
+	{
+		"name": "u8_3_K",
+		"path": "..\\u8_3_K"
+	},
+	{
+		"name": "u8_4_K",
+		"path": "..\\u8_4_K"
+	}
+],
+  "settings": {}
+}
