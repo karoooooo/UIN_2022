@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom'
 import { getQuizByCategory, getQuizzes } from './lib/services/quiz.js';
 
@@ -32,7 +32,15 @@ export default function Quizzes() {
          data = await getQuizByCategory(category)
       }
       setContent(data)
-   };
+   }
+
+  useEffect( () => {
+    const listQuizzes = async () => {
+      const data = await getQuizzes()
+      setContent(data)
+    }
+    listQuizzes()
+  }, [])
 
   return (
     <div>
