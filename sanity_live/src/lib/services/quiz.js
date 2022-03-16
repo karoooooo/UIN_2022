@@ -4,6 +4,7 @@ const fields = `
   title,
   "slug": slug.current,
   "category": category->name.current,
+  id,
 `
 
 export async function getQuizzes() {
