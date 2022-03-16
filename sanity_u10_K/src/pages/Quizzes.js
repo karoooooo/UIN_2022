@@ -36,7 +36,9 @@ export default function Quizzes() {
 
   useEffect( () => {
     const listQuizzes = async () => {
+      setLoading(true)
       const data = await getQuizzes()
+      setLoading(false)
       setContent(data)
     }
     listQuizzes()
