@@ -1,0 +1,54 @@
+{
+  "folders": [
+    {
+      "name": "UIN_2022",
+      "path": ".."
+    },
+    {
+      "name": "React Player",
+      "path": "..\\react_player_K"
+    },
+    {
+      "name": "Formbuilder",
+      "path": "..\\formbuilder_K"
+    },
+    {
+      "name": "TTT fasit",
+      "path": "..\\tictactoe"
+    },
+    {
+      "name": "Tic tac toe",
+      "path": "..\\tictactoe_K"
+    },
+    {
+      "name": "To do",
+      "path": "..\\todo_K"
+    },
+    {
+      "name": "Pokémon",
+      "path": "..\\pokemon_live_K"
+    },
+    {
+      "name": "SANITY",
+      "path": "..\\sanity_u10_K"
+    },
+    {
+      "name": "Uke 8 Oppg 1",
+      "path": "..\\u8_1_K"
+    },
+    {
+      "name": "Uke 8 Oppg 2",
+      "path": "..\\u8_2_K"
+    },
+    {
+      "name": "Uke 8 Oppg 3",
+      "path": "..\\u8_3_K"
+    },
+    {
+      "name": "Uke 8 Oppg 4",
+      "path": "..\\u8_4_K"
+    },
+
+  ],
+  "settings": {}
+}
