@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom'
-import { getQuizByCategory, getQuizzes } from './lib/services/quiz.js';
+import { getQuizByCategory, getQuizzes } from './lib/services/quiz.js.js';
 
 const quizzes = [
   {

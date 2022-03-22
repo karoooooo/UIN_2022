@@ -99,7 +99,7 @@ const App = () => {
   return (
     <>
       {/* {JSON.stringify(players)} */}
-      <Form 
+      <Form
         started={started}
         initGame={initGame}
         players={players}

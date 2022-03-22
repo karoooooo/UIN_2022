@@ -13,6 +13,7 @@ export default function PageRoutes() {
         <Route path="hjem" element={<Home />} />
         <Route path="produkter">
           <Route index element={<Products />} />
+          {/* Muliggjør dynamisk id; produkter/dynamisk-id*/}
           <Route path=":id" element={<Product />} />
         </Route>
       </Routes>

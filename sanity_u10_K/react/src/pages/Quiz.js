@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import { getQuiz } from '../../../sanity_live/src/lib/services/quiz'
+import { getQuiz } from '../../../../sanity_live/src/lib/services/quiz'
 
 export default function Quiz() {
   const [content, setContent] = useState(null)
