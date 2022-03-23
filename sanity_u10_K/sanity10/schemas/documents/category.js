@@ -6,12 +6,13 @@ export default {
     {
     type: 'slug',
     name: 'name',
-    title: 'Navn',    
+    title: 'Navn',  
+    validation: (Rule) => Rule.required(),
     },
   ],
   preview:{
     select: {
       title: 'name.current',
-    }
-  }
-}
+    },
+  },
+},
