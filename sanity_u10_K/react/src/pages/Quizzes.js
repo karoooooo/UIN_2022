@@ -1,37 +1,39 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom'
-import { getQuizByCategory, getQuizzes } from './lib/services/quiz.js.js';
+import { getQuizByCategory, getQuizzes } from '../lib/services/quiz.js';
 
 const quizzes = [
   {
-    id: 1,
+    id: '1',
     title: 'test',
     slug: 'slug-1',
     category: 'react',
   },
   {
-    id: 2,
+    id: '2',
     title: 'test 2',
     slug: 'slug-2',
     category: 'sanity',
   },
 ];
 
-const categories = ['Sanity', 'React'];
-
+const categories = ['Sanity', 'React']
 
 export default function Quizzes() {
+
    const [content, setContent] = useState([])
+   const [loading, setLoading] = useState(false)
+
    
    const handleFilter = async (event) => {   
-      const category = event.target.value.toLowerCase
-      let data
-      if (category === 'alle') {
-         data = await getQuizzes()
-      } else {
-         data = await getQuizByCategory(category)
-      }
-      setContent(data)
+    const category = event.target.value.toLowerCase()
+    let data;
+    if (category === 'alle') {
+        data = await getQuizzes()
+    } else {
+        data = await getQuizByCategory(category)
+    }
+    setContent(data)
    }
 
   useEffect( () => {
@@ -43,6 +45,10 @@ export default function Quizzes() {
     }
     listQuizzes()
   }, [])
+  
+  if(loading) {
+    return <p>Henter data ...</p>
+  }
 
   return (
     <div>

@@ -15,4 +15,4 @@ export default {
       title: 'name.current',
     },
   },
-},
+}

@@ -17,18 +17,16 @@ export default {
         source: 'title',
         slugify: (input) => input.toLowerCase()
         .replace(/\s+/g, '-')
-        .slice(0, 200)
+        .slice(0, 200),
       },
-      validation: (rule) => rule.required(), 
+      validation: (Rule) => Rule.required(), 
     },
-
     {
       type: 'array',
       name: 'questions',
       title: 'Spørsmål og svar',
       of:[{ type: 'question' }]
     },
-
     {
       type:'reference',
       name: 'category',
@@ -36,5 +34,4 @@ export default {
       to: { type: 'category' },
     }
   ],
-
 }
