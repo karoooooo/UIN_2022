@@ -20,6 +20,6 @@ const actor = {
             .slice(0, 80),
          },
       },
-   ]
+   ],
 }
 export default actor

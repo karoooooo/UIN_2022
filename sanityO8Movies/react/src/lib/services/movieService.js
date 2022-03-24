@@ -1,34 +1,21 @@
-import client from '../client.js'
+import client from '../client'
 
-// må være sikker på hva som skal hentes//
-
-// const movieFields = ` 
-//    'movie': movie.current,
-//    'actor': actor->title,
-// `
-
-// const movieFields = {
-//   name: 'movie',
-//   fields: [
-//     {
-//       name:'full_name',
-//     },
-//     {
-//       name: 'actor'
-//     },
-//   ],
-// }
-
+const movieFields = `  
+  title,
+  'actor': actor->full_name,
+  'slug': slug.current,
+  _id,
+`
 
 export const getMovies = async () => {
-  const data = await client.fetch(`*[]`)
+  const data = await client.fetch(`*[_type == "movie"]{${movieFields}}`)
   return data
 }
 
-// export const getEvents = async (slug) => {
-//   const data = await client.fetch(
-//     `*[_type == "movie" && slug.current == $slug]{${eventFields}}, { slug }`)
-//   return data
-// };
-
-// trenger jeg det med slug?
+export const getMovie = async (slug) => {
+  const data = await client.fetch(
+    `*[_type == "movie" && slug.current == $slug]{${movieFields}}`,
+    { slug }
+  )
+  return data?.[0]
+}

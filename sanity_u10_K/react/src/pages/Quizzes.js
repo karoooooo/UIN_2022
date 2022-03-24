@@ -1,21 +1,21 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom'
-import { getQuizByCategory, getQuizzes } from '../lib/services/quiz.js';
+import { getQuizByCategory, getQuizzes } from '../lib/services/quiz';
 
-const quizzes = [
-  {
-    id: '1',
-    title: 'test',
-    slug: 'slug-1',
-    category: 'react',
-  },
-  {
-    id: '2',
-    title: 'test 2',
-    slug: 'slug-2',
-    category: 'sanity',
-  },
-];
+// const quizzes = [
+//   {
+//     id: '1',
+//     title: 'test',
+//     slug: 'slug-1',
+//     category: 'react',
+//   },
+//   {
+//     id: '2',
+//     title: 'test 2',
+//     slug: 'slug-2',
+//     category: 'sanity',
+//   },
+// ];
 
 const categories = ['Sanity', 'React']
 
